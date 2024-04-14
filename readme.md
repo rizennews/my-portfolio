@@ -74,8 +74,10 @@ You can deploy the WordPress website to a live server by following these steps:
 3. Set up a MySQL database and configure the WordPress `wp-config.php` file with the database credentials.
 4. Access the WordPress admin dashboard to customize the website and add content.
 
-## License
 
- license.txt
 
 ```
+
+## License
+
+[license.txt]
