@@ -35,6 +35,9 @@ Designolabs Studio Portfolio Website is a WordPress-based platform designed to h
 - WordPress
 - PHP
 - CSS
+- HTML
+- SCSS
+- Javascript
 
 ## Getting Started
 
