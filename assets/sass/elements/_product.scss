@@ -1,0 +1,23 @@
+.iteck-product.style-2{
+	.port-inner {
+		.port-box{
+			background: #fff;
+		}
+		.port-dbox {
+			a span svg:hover{
+				stroke:var(--color-main);
+			}
+		}
+		&:hover{
+			.dbox-relative {
+				h3 a{
+				    color: #000;
+				}
+				p{
+					color:#777;
+				}
+			}
+		}
+	}
+
+}

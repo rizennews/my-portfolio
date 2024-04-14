@@ -1,0 +1,180 @@
+
+
+/*----------Feature Style 1----------*/
+.feature-1 {
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+	background-color: $color-white;
+	padding: 60px 25px 50px 25px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0 , .1);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+	&:hover {
+		box-shadow: 10px 20px 40px 0 rgba(0, 0, 0, 0.2);
+		margin-top: -5px;
+		.iteck-icon {
+			background: #fff;
+			color: var(--color-main);
+			border: 1px solid rgba(250,250,250,.2);
+		}
+	}
+	.iteck-icon {
+		border-radius: 100px;
+		color: $color-black;
+		display: block;
+		font-size: 40px;
+		height: 80px;
+		line-height: 80px;
+		margin: auto;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+		width: 80px;
+		border: 1px solid #eee;
+		color: var(--color-main);
+		border-color: var(--color-main);
+	}
+	.icon-title {
+		font-size: 22px;
+	    margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.icon-text {
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.feature-btn {
+		letter-spacing: 2px;
+		transition-duration: 1.5s;
+		-webkit-transition-duration: 1.5s;
+		display: inline-block;
+		font-size: 14px;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		transition: all .4s;
+		color: $color-gray;
+		border-bottom: 2px solid #dfdfdf;
+	}
+}
+.table-content {
+	.feature-1 {
+		h3 {
+			font-size: 30px;
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+}
+.feature-2 {
+	&:hover {
+		box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.2);
+	}
+	background-color: $color-white;
+	padding: 35px 25px;
+	transition: all 0.3s ease-in-out;
+	.cont {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.iteck-icon {
+		color: var(--color-main);
+		font-size: 40px;
+		height: 80px;
+		line-height: 80px;
+		width: 60px;
+		transition: all 0.3s ease-in-out;
+		display: table-cell;
+		vertical-align: top;
+	}
+	.icon-title {
+		font-size: 20px;
+	}
+	.icon-text {
+		p {
+			margin-bottom: 20px;
+		}
+	}
+	.feature-btn {
+		float: left;
+		border-bottom: 2px solid #dfdfdf;
+	}
+}
+.feature-3 {
+	padding: 0 25px;
+	.cont {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.iteck-icon {
+		color: var(--color-main);
+		font-size: 40px;
+		height: 80px;
+		line-height: 80px;
+		width: 50px;
+		transition: all 0.3s ease-in-out;
+		display: table-cell;
+		vertical-align: top;
+	}
+	.fa-envelope-o {
+		font-size: 25px;
+		line-height: 70px;
+	}
+	.icon-title {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.icon-text {
+		p {
+			margin-bottom: 0;
+		}
+	}
+	&:hover {
+		.iteck-icon {
+			color: var(--color-main);
+		}
+	}
+}
+.feature-btn-align-icon-left.feature-btn-button-icon {
+	float: left;
+	margin-right: 10px;
+	transition: all .4s;
+}
+.feature-btn-align-icon-right.feature-btn-button-icon {
+	float: right;
+	margin-left: 10px;
+	transition: all .4s;
+}
+.feature-4 {
+	background-color: $color-white;
+	padding: 50px 30px;
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.07);
+	.icon-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	.feature-btn {
+		letter-spacing: 2px;
+		transition-duration: 1.5s;
+		-webkit-transition-duration: 1.5s;
+		display: inline-block;
+		font-size: 14px;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		transition: all .4s;
+		color: $color-gray;
+		border-bottom: 2px solid #dfdfdf;
+	}
+	.iteck-icon {
+		background: var(--color-main);
+		color: $color-white;
+		border-color: var(--color-main);
+	}
+}

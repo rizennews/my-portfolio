@@ -1,0 +1,144 @@
+.iteck-video-card-carousel {
+    position: relative;
+
+    .swiper-container {
+        padding-bottom: 30px;
+    }
+
+    .swiper-slide {
+        padding: 30px;
+    }
+
+    .swiper-pagination {
+        width: 100%;
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        cursor: pointer;
+        width: 20px;
+        height: 3px;
+        border-radius: 0;
+        margin: 0 5px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #000;
+        border-radius: 0;
+        width: 30px !important;
+    }
+
+    .video-card {
+        background-color: #ffff;
+        border-radius: 15px;
+        box-shadow: 0 0 30px #0001;
+        overflow: hidden;
+
+        .img {
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            .play_icon {
+                width: 100px;
+                height: 100px;
+                background-color: #fff;
+                border-radius: 50%;
+                line-height: 100px;
+                text-align: center;
+                color: #000;
+                font-size: 18px;
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+                z-index: 10;
+            }
+        }
+
+        .info {
+            padding: 5vw;
+
+            .icon {
+                width: 130px;
+                margin-bottom: 30px;
+            }
+
+            h4 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .author {
+                display: flex;
+                align-items: center;
+                margin-top: 40px;
+
+                .img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .inf {
+                    p {
+                        color: #999;
+                        margin-bottom: 0;
+                    }
+
+                    h6 {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .logos-content {
+        background-color: #fff;
+
+        .logos {
+            border-bottom: 1px solid #9993;
+
+            .row>div {
+                text-align: center;
+
+                &:first-of-type {
+                    text-align: start;
+                }
+
+                &:last-of-type {
+                    text-align: end;
+                }
+            }
+
+            .logo {
+                opacity: 30%;
+                margin-bottom: 30px;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+
+            strong {
+                color: #000;
+            }
+        }
+    }
+}

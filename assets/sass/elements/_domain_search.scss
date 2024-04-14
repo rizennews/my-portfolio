@@ -1,0 +1,84 @@
+/* --------------- search styles --------------- */
+.iteck-domain-search{
+    .content {
+        padding: 0px;
+    }
+    .domain-choose{
+        display: flex;
+        .butn{
+            flex-shrink: 0;
+            margin-inline-start: 10px;
+            padding: 20px 40px;
+            background: var(--color-main);
+            border-radius: 6px;
+            border: 0;
+        }
+        .form-group{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            .icon{
+                margin-right: 10px;
+                flex-shrink: 0;
+            }
+            .form-select{
+                width: max-content;
+                border: 0;
+                flex-shrink: 0;
+                font-weight: bold;
+                color: var(--color-main);
+            }
+            input{
+                width: 100%;
+                border: 0;
+                padding: 1px 2px;
+                background: #fff;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .result{
+        font-size: 13px;
+        font-weight: 400;
+        &.taken-domain {
+            color: #ffc107;
+        }
+        &.available-domain {
+            color: #28a745;
+        }
+        &.enter-domian {
+            color: #dc3545;
+        }
+    }
+
+    .domain-names{
+        margin-top: 40px;
+        .item{
+            margin-top: 10px;
+            span{
+                color: #6c41ff;
+            }
+        }
+        p{
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+
+        h5{
+            text-align: center;
+            border-top: 1px solid #9993;
+            padding-top: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--color-darkBlue2);
+            font-weight: bold;
+        }
+    }
+}
+

@@ -1,0 +1,55 @@
+/* --------------- screenshots style --------------- */
+.iteck-screenshots{
+    position: relative;
+    height: 590px;
+    .screenshots-slider{
+        position: absolute;
+        top: 0px;
+        width: calc(100% + 120px);
+        left: -60px;
+        .img{
+            margin: 0 auto;
+            height: 420px;
+            width: 190px;
+            @media screen and (max-width: 991px) {
+                & {
+                    margin: 0 auto;
+                    width: 190px;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                & {
+                    width: 150px;
+                    height: 300px;
+                }
+            }
+            @media screen and (max-width: 320px) {
+                & {
+                    width: 140px;
+                    height: 300px;
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+    }
+    .mob-hand{
+        pointer-events: none;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-33%);
+        height: 600px;
+        z-index: 10;
+        @media screen and (max-width: 480px) {
+            & {
+                bottom: 165px;
+                height: 435px;
+            }
+        }
+    }
+}

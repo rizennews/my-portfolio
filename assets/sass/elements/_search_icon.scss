@@ -1,0 +1,253 @@
+.iteck-search-icon {
+    .search-icon-header {
+        float: initial;
+        margin-left: initial;
+        position: relative;
+        top: initial;
+        line-height: 1;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        color: #818a91;
+        text-align: center;
+
+        a.search {
+            font-size: 16px;
+            position: relative;
+
+            &:after {
+                width: 1px;
+                height: 30px;
+                position: absolute !important;
+                bottom: -5px;
+                left: -22px;
+                z-index: 0;
+                margin: auto;
+                background: transparent;
+                cursor: initial;
+            }
+
+            &.hide {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        a.cart-contents {
+            font-size: 14px;
+            position: relative;
+            left: 20px;
+        }
+
+        a {
+            i {
+                color: $color-black;
+            }
+
+            svg {
+                fill: $color-black;
+            }
+        }
+
+        .close-black-block {
+            a {
+                i {
+                    color: $color-white;
+                }
+
+                i.fa-times {
+                    color: $color-white;
+                }
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        .searchform { 
+            input[type=search] {
+                font-style: italic;
+                font-size: 16px;
+                height: 56px;
+            }
+
+            .searchsubmit {
+                background: transparent;
+            }
+
+            &::after {
+                display: inline-block;
+                content: "\f002";
+                font-family: "FontAwesome";
+                background: var(--color-main);
+                color: $color-white  !important;
+                right: 0;
+                height: 56px;
+                line-height: 56px;
+                width: 56px;
+                font-size: 2rem;
+                position: absolute;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    .black-search-block {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.9);
+        visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.25s linear;
+        -moz-transition: all 0.25s linear;
+        -ms-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+        z-index: -1;
+    }
+
+    .search-icon-header.open {
+        .black-search-block {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition: all 0.25s linear;
+            -moz-transition: all 0.25s linear;
+            -ms-transition: all 0.25s linear;
+            -o-transition: all 0.25s linear;
+            transition: all 0.25s linear;
+            z-index: 9999999;
+        }
+
+        .black-search-table-cell {
+            div {
+                top: 0px;
+                opacity: 1;
+                -webkit-transition: all 0.25s linear;
+                transition: all 0.25s linear;
+                -webkit-transition-delay: 150ms;
+                transition-delay: 150ms;
+            }
+        }
+    }
+
+    .black-search-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    .black-search-table-cell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        div {
+            width: 50%;
+            position: relative;
+            display: inline-block;
+            top: 50px;
+            opacity: 0;
+            -webkit-transition: all 0.25s linear;
+            transition: all 0.25s linear;
+            -webkit-transition-delay: 150ms;
+            transition-delay: 150ms;
+
+            input[name="s"] {
+                background: #fff;
+                padding: 15px 50px 15px 15px !important;
+                border: none;
+                font-size: 20px;
+                width: 100%;
+                border-bottom: 1px solid #fff;
+                font-weight: 400;
+            }
+        }
+
+        .searchsubmit {
+            border: none;
+            background: 0;
+            outline: 0;
+            width: auto;
+            cursor: pointer;
+            color: $gray-dark;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            top: 21px;
+            z-index: 99999;
+            text-align: center;
+        }
+    }
+
+    .close-black-block {
+        font-size: 30px;
+        color: $color-white;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+
+        i {
+            font-size: 30px;
+            color: $color-white;
+        }
+    }
+}
+
+.iteck-search-field {
+    .searchform {
+        display: flex;
+        position: relative;
+        border-bottom: 1px solid #9993;
+        padding: 5px;
+
+        .searchsubmit {
+            margin-inline-end: 10px;
+            flex-shrink: 0;
+            font-size: 21px;
+            background: transparent;
+            border: 0;
+
+            &.right {
+                margin-inline-end: 0px;
+                margin-inline-start: 10px;
+            }
+
+            svg {
+                width: 21px;
+                height: 21px;
+                fill: #000;
+            }
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            padding: 1px 2px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

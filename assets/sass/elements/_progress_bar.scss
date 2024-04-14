@@ -1,0 +1,15 @@
+.iteck-progress-bar{
+	.progress{
+		height: 8px;
+		border-radius: 10px;
+		background-color: #fff1;
+		.progress-bar{
+			background: var(--color-main);
+			width: 1%;
+			transition: all 6s linear;
+			&.animated{
+				width: 100%;
+			}
+		}
+	}
+}

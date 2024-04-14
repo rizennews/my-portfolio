@@ -1,0 +1,56 @@
+
+// default color set 
+$color-white: #ffffff;
+$color-black: #000000;
+$gray-dark: #333;
+$color-gray: #f9f9f9;
+$primary-dark: #c2211c;
+$title-color: #222222;
+$gray-color: #777777;
+$gray-light: #f1f1f1;
+$no_color: transparent;
+$color_1: #505050;
+$color_2: #4f4f4f;
+$color_3: #1f1f1f;
+$color_6: #888;
+$color_4: #aaa;
+$color_5: #FF0000;
+$color_8: #555;
+$border_color_2: #e0e0e0;
+$color_9: #999;
+$color_10: #eee;
+$color_11: #2b292a;
+$color_12: #bf919f;
+$color_13: #ddd;
+
+// social color
+$color-facebook: #4969a8;
+$color-twitter: #2aa3ef;
+$color-dribbble: #ea4c89;
+$color-pinterest: #bd081c;
+$color-instagram: #e8715c;
+$color-linkedin: #1178b3;
+
+// body var
+$iconFont: 'FontAwesome';
+$iconFont2: 'iconfont';
+
+// body var
+$bodyFont: 'Poppins', sans-serif;;//Open Sans
+$titleFont: 'Montserrat', sans-serif;;//Asap
+$fontCursive: Menlo,Monaco,Consolas,"Courier New",monospace;
+$font_slider: 'slick';
+$bodyFontWeight: 400;
+$bColor: #464646;
+$bfSize: 16px;
+$blineHeight: 26px / $bfSize;
+
+@function rem($pixels, $context: $bfSize) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+	@return $pixels / $context * 1rem;
+}

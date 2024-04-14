@@ -1,0 +1,414 @@
+/* ----------------------------------------------------------------
+	  [ * Fancy Styles ]
+-----------------------------------------------------------------*/
+
+/* Fancy Style 1 */
+
+  .exp-img .img {
+	width: 90%;
+	height: 500px;
+	position: relative;
+	z-index: 2;
+	background-size: cover;
+	background-repeat: no-repeat;
+	 }
+	.exp-img .img:after {
+	  content: '';
+	  position: absolute;
+	  top: 40px;
+	  left: 40px;
+	  right: 40px;
+	  bottom: 40px;
+	  background: rgba(255, 255, 255, 0.95);
+	  z-index: -1; }
+	.exp-img .img .since {
+	  position: absolute;
+	  right: 70px;
+	  top: 70px; }
+	  .exp-img .img .since span {
+		display: block;
+		color: #b19777;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1; }
+		.exp-img .img .since span:first-of-type {
+		  font-size: 16px;
+		  font-weight: 600;
+		  letter-spacing: 2px; }
+	.exp-img .img .years {
+	  position: absolute;
+	  left: 70px;
+	  bottom: 70px; }
+	 .exp-img .img .years h2 {
+		font-size: 140px;
+		font-weight: 800;
+		background: url(../img/exp.jpg) no-repeat;
+		background-position: 18% 65%;
+		-webkit-background-clip: text !important;
+		-webkit-text-fill-color: transparent;
+		line-height: 1;
+		}
+	  .exp-img .img .years h5 {
+		color: #b19777;
+		letter-spacing: 5px;
+		font-size: 20px; }
+
+ 
+/* Fancy Style 2 */
+.iteck-fancy.style-2{
+    .img{
+        padding-left: 150px;
+        padding-right: 50px;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background-repeat: repeat;
+            opacity: 1;
+            z-index: 0;
+        }
+        img{
+    	    position: relative;
+        }
+
+        .stauts{
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+            display: flex;
+
+            .item{
+                padding: 20px 30px;
+                background: #272727;
+                margin-right: 30px;
+                position: relative;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    right: -10px;
+                    bottom: -10px;
+                    border: 1px solid #f9f9f9;
+                }
+
+                h4{
+                    font-size: 45px;
+                    font-weight: 800;
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-right: 20px;
+
+                    span{
+                        font-size: 30px;
+                        font-weight: 500;
+                        margin-left: -5px;
+                    }
+                }
+
+                h6{
+                    font-size: 15px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+// Light Mode
+.iteck-fancy.style-2 .img .stauts{
+	.item{
+        h4,h6{
+        	color:#fff;
+        }
+		&:first-of-type{
+            background: #f9f9f9;
+            h4,h6{
+            	color:#121a21;
+            }
+		}
+	}
+
+} 
+
+// Dark Mode 
+body.iteck-dark-mode .iteck-fancy.style-2 .img .stauts{
+	.item{
+		&:first-of-type{
+            background: #fff;
+            h4,h6{
+            	color:#121a21;
+            }
+		}
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.iteck-auto-mode .iteck-fancy.style-2 .img .stauts{
+		.item{
+			&:first-of-type{
+	            background: #fff;
+	            h4,h6{
+	            	color:#121a21;
+	            }
+			}
+		}
+	}
+}
+
+.iteck-fancy.style-3 {
+	position: relative;
+  
+	.hero-bg {
+	  width: 420px;
+	  height: 420px;
+	  background-attachment: fixed;
+	}
+  
+	.exp {
+	  position: absolute;
+	  top: 30px;
+	  left: 30px;
+	  width: 360px;
+	  height: 360px;
+	  background: rgba(255, 255, 255, 0.9);
+  
+	  h2 {
+		font-size: 150px;
+		font-weight: 700;
+		text-align: center;
+		margin: auto;
+		-webkit-background-clip: text !important;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: var(--color-main);
+		line-height: 1;
+	  }
+  
+	  p {
+		color: var(--color-main);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	  }
+	}
+}
+
+// Dark Mode 
+body.iteck-dark-mode .iteck-fancy.style-3 {
+	.exp{
+		background: rgba(35, 35, 35, 0.9);
+	}
+
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+	body.iteck-auto-mode .iteck-fancy.style-3 {
+		.exp{
+			background: rgba(35, 35, 35, 0.9);
+		}
+	}
+}
+
+/* Fancy Style 4 */
+.iteck-fancy.style-4{
+    .img{
+        padding-left: 150px;
+        padding-right: 50px;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background-repeat: repeat;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        img{
+    	    position: relative;
+        }
+
+        .stauts{
+            position: absolute;
+            bottom: 20px;
+            left: 170px;
+            display: flex;
+
+            .item{
+                padding: 20px;
+                background: #272727;
+                margin-right: 30px;
+                position: relative;
+				border-radius: 10px;
+				display: flex;
+				margin-bottom: 0;
+				align-items: flex-end;
+				.progress-curve{
+					position: static;
+					width: 94px;
+					height: 93px;
+					border-radius: 10px;
+					background-color: #141a26;
+					display: flex;
+					align-items: center;
+					margin-right: 15px;
+					overflow: hidden;
+					padding: 10px;
+					justify-content: center;
+				}
+				.progress-bar-box{
+					.skill-item {
+						margin-bottom: 50px;
+						width: 180px;
+				
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+						
+						h6 {
+							font-size: 13px;
+							font-weight: 300;
+							text-transform: uppercase;
+							letter-spacing: 2px;
+							margin-bottom: 3px;
+						}
+						.skill-progress {
+							height: 7px;
+							background-color: rgba(255,255,255,.05);
+							position: relative;
+					
+							.progres {
+								position: absolute;
+								height: 100%;
+								width: 0;
+								top: 0;
+								left: 0;
+								background-color: var(--color-main);
+								transition: all 1.5s;
+					
+								&:after {
+									content: attr(data-value);
+									position: absolute;
+									right: -8px;
+									top: -35px;
+									padding: 4px 10px;
+									border-radius: 5px;
+									background: var(--color-main);
+									font-size: 12px;
+									font-weight: 600;
+									color:#fff;
+									line-height: 1.5;
+								}
+					
+								&:before {
+									content: '';
+									width: 0;
+									height: 0;
+									border-left: 5px solid transparent;
+									border-right: 5px solid transparent;
+									border-top: 8px solid var(--color-main);
+									position: absolute;
+									right: -5px;
+									bottom: 9px;
+									
+								}
+							}
+						}
+					}
+
+				}
+                h4{
+                    font-size: 45px;
+                    font-weight: 800;
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-right: 20px;
+
+                    span{
+                        font-size: 30px;
+                        font-weight: 500;
+                        margin-left: -5px;
+                    }
+                }
+				.progress-bar-title{
+					margin-top: 10px;
+					h6{
+						font-size: 15px;
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+
+            }
+        }
+    }
+}
+
+// Light Mode
+.iteck-fancy.style-4 .img .stauts{
+	.item{
+        h4,h6{
+        	color:#fff;
+        }
+		&:first-of-type{
+            background: #f9f9f9;
+            h4,h6{
+            	color:#121a21;
+            }
+		}
+	}
+
+} 
+
+// Dark Mode 
+body.iteck-dark-mode .iteck-fancy.style-4 .img .stauts{
+	.item{
+		&:first-of-type{
+            background: #11141b;
+            h4,h6{
+            	color:#fff;
+            }
+		}
+	}
+} 
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.iteck-auto-mode .iteck-fancy.style-4 .img .stauts{
+		.item{
+			&:first-of-type{
+	            background: #11141b;
+	            h4,h6{
+	            	color:#fff;
+	            }
+			}
+		}
+	}
+}
+
+// Mobile size
+@media screen and (max-width: 767px) {
+	.iteck-fancy.style-4 .img{
+		padding-left:15px;
+		.stauts{
+			bottom:5px;
+			left:20px;
+		}
+	}
+}

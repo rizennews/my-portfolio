@@ -1,0 +1,151 @@
+/*----------------------------- Projects Carousel ---------------------------*/
+.iteck-projects-carousel {
+    .container {
+        display: block;
+    }
+    overflow: hidden;
+    .section-head{
+        h6 {
+            font-weight: normal;
+            font-size: 14px;
+            color: var(--color-main);
+            text-decoration: underline;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 40px;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        position: relative;
+        .swiper-button-next,
+        .swiper-button-prev{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s ease;
+            font-size: 18px;
+            color: #000;
+            background-color: #fff;
+            background-image: none;
+            &:hover{
+                background: var(--color-main);
+                color: #fff;
+            }
+            &::after{
+                display: none;
+            }
+        }
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+            left: auto;
+            right: 75px;
+        }
+    }
+    .projects-slider8{
+        .swiper-container{
+            overflow: visible;
+            .project-card{
+                opacity: 0;
+                transition: all 0.5s ease;
+                transform: scale(0.8);
+            }
+            .swiper-slide-active{
+                .project-card{
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    .content {
+        padding: 0px;
+    }
+    .img{
+        border-radius: 10px;
+        position: relative;
+        height: 410px;
+        .main-img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .tags{
+            position: absolute;
+            z-index: 10;
+            top: 30px;
+            right: 30px;
+            a{
+                text-transform: uppercase;
+                background-color: #fff;
+                color: var(--color-main);
+                padding: 5px 20px;
+                border-radius: 30px;
+                &:hover{
+                    background-color: var(--color-main);
+                    color: #fff;
+                }
+            }
+        }
+        .img-chart {
+            position: absolute;
+            top: 120px;
+            z-index: 2;
+            width: 200px;
+            left: -100px;
+        }
+    }
+    .info{
+        padding-inline-start: 50px;
+        .project-logo{
+            img{
+                width: 90px;
+                margin-bottom: 40px;
+            }
+        }
+        h4.title{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .proj-det{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px 0;
+            border-top: 1px solid #9992;
+            width: 100%;
+            .item{
+                margin-inline-end: 30px;
+                p{
+                    color: #999;
+                    margin-bottom: 5px;
+                }
+            }
+            .icon{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: var(--color-main);
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                margin-right: 0;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px){
+    .iteck-projects-carousel .container {
+        max-width: 1170px;
+    }
+}

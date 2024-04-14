@@ -1,0 +1,49 @@
+.products-categories {
+    text-transform: capitalize;
+    .card-title{
+        font-size: 15px;
+        color: #000;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    .form-check-label{
+        cursor: pointer;
+    }
+    .cat-link{
+        color: #000;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .category-checkRadio{
+        padding: 0;
+        line-height: 1;
+        .form-check-input{
+            display: none;
+        }
+
+        .form-check-input:checked ~ .form-check-label{
+            color: var(--color-blue5);
+        }
+    }
+
+    .accordion{
+        .accordion-button{
+            color: #000;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 0;
+            background: transparent;
+            margin-bottom: 10px;
+            box-shadow: none;
+        }
+
+        .accordion-button::after{
+            background-size: 0.8rem;
+            background-position: center;
+        }
+
+        .accordion-button:not(.collapsed){
+            color: var(--color-blue5);
+        }
+    }
+}

@@ -1,0 +1,493 @@
+/*----------Menu widgte Style----------*/
+.iteck-nav .menu-wrapper ul li ul {
+	background: #fff;
+}
+
+.iteck-nav .none>.menu-item {
+	&.sfHover>a:before {
+		display: none;
+	}
+}
+
+.iteck-nav .slide-up>.menu-item {
+	&::before {
+		position: absolute;
+		content: "";
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 0%;
+		background-color: #fff2;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		border-bottom: 2px solid var(--color-lightBlue);
+
+		&::before {
+			height: 100%;
+		}
+	}
+
+	&.sfHover>a:before {
+		display: none;
+	}
+
+	&.current-menu-ancestor {
+		border-bottom: 2px solid var(--color-lightBlue);
+
+		&::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff2;
+			-webkit-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+.iteck-nav {
+	.menu-item-desc {
+		position: absolute;
+		font-size: 8px;
+		padding: 2px 5px;
+		border-radius: 3px;
+		top: 14px;
+		text-transform: uppercase;
+		background-color: #f8d7da;
+		border-color: #f5c2c7;
+		color: #dc3545;
+		line-height: 1.7;
+		display: inline-block;
+		font-weight: 600;
+		margin-left: 3px;
+	}
+
+	.navigation li.current_page_item>a {
+		color: #000000;
+	}
+
+	li.menu-item-has-children>a:after {
+		color: #333;
+	}
+}
+
+/*----------Menu Style 3----------*/
+.iteck-menu.style-3 {
+	.menu-wrapper ul li ul {
+		background: initial;
+		border-top: initial;
+		box-shadow: none;
+		line-height: 1.2;
+
+	}
+
+	.hamenu {
+		z-index: 9999;
+		transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
+
+		&.open {
+
+			.menu-links {
+
+				.main-menu {
+
+					>li {
+
+						.link {
+							transform: translateY(0);
+							transition-delay: 1s;
+							display: inline-block;
+						}
+					}
+				}
+			}
+
+			.cont-info {
+
+				&:after {
+					height: 100vh;
+					transition-delay: 1s;
+				}
+
+				.item {
+					transform: translateY(0);
+					opacity: 1;
+					transition-delay: 1s;
+				}
+			}
+		}
+
+		.menu-links {
+			color: #fff;
+
+			.o-hidden {
+				overflow: hidden;
+				position: relative;
+				display: inline-block;
+			}
+
+			.main-menu {
+				position: relative;
+				z-index: 2;
+
+				&.gosub {
+
+					>li {
+						opacity: 0;
+						visibility: hidden;
+						transition-delay: .2s !important;
+
+						.link {
+							transform: translateY(45px) !important;
+							opacity: 0 !important;
+							visibility: hidden !important;
+							transition-delay: .2s !important;
+						}
+					}
+
+					.sub-menu.sub-open {
+						z-index: 3 !important;
+						opacity: 1 !important;
+						visibility: visible !important;
+					}
+				}
+
+				>li {
+					font-size: 30px;
+					font-weight: 600;
+					padding: 20px;
+					width: max-content;
+					opacity: 1;
+					visibility: visible;
+					transition: all .5s;
+
+					span.nm {
+						opacity: .8;
+						font-size: 11px;
+						margin-right: 10px;
+					}
+
+					.link {
+						transform: translateY(45px);
+						transition: all .7s;
+						cursor: pointer;
+
+						i {
+							font-size: 15px;
+							margin-left: 5px;
+						}
+					}
+				}
+
+				.sub-menu {
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					visibility: hidden;
+					z-index: -1;
+					transition-delay: .2s;
+
+					&.sub-open {
+						z-index: 3;
+
+						li {
+
+							.sub-link {
+								transform: translateY(0px);
+								transition-delay: 1s;
+								cursor: pointer;
+							}
+						}
+					}
+
+					li {
+						font-size: 20px;
+						font-weight: 400;
+						letter-spacing: 1px;
+						padding: 8px 10px;
+						width: max-content;
+
+						&:hover {
+							color: #fff;
+						}
+
+						.sub-link {
+							transform: translateY(45px);
+							transition: all .7s;
+
+							&.back {
+
+								font-size: 20px;
+								font-weight: 600;
+								cursor: pointer;
+
+								i {
+									margin-left: 10px;
+								}
+							}
+
+							em {
+								font-size: 13px;
+								font-weight: 300;
+								margin-left: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.cont-info {
+			color: #fff;
+			margin-top: 50px;
+			position: relative;
+
+			&:after {
+				content: '';
+				width: 1px;
+				height: 0;
+				background: rgba(255, 255, 255, .1);
+				position: absolute;
+				left: -40px;
+				top: -170px;
+				transition: all .7s;
+			}
+
+			.item {
+				margin-bottom: 30px;
+				transform: translateY(-30px);
+				opacity: 0;
+				transition: all .7s;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				h6 {
+					font-size: 14px;
+					font-weight: 600;
+					text-transform: uppercase;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	ul.main-menu {
+		counter-reset: listStyle;
+	}
+
+	.hamenu .menu-links .main-menu>li,
+	.hamenu .menu-links .main-menu .sub-menu li {
+		list-style: none;
+	}
+
+	.hamenu .menu-links .main-menu .sub-menu.sub-open>ul>li>div>.sub-link {
+		-webkit-transition-delay: .5s;
+		transition-delay: .5s;
+	}
+
+	.sub-menu ul {
+		counter-reset: listStyle2;
+	}
+
+	ul.main-menu>li .link>.nm::before {
+		counter-increment: listStyle;
+		content: counter(listStyle, decimal-leading-zero) ".";
+	}
+
+	.sub-menu ul>li:not(:first-child) .sub-link>.nm::before {
+		counter-increment: listStyle2;
+		content: counter(listStyle2, decimal-leading-zero) ".";
+	}
+
+	.hamenu .menu-links .main-menu .sub-menu {
+		opacity: 1;
+	}
+
+	.hamenu.open .menu-links .main-menu .link:hover,
+	.hamenu .menu-links .main-menu .sub-link:hover {
+		-webkit-transition-delay: 0s !important;
+		transition-delay: 0s !important;
+	}
+
+}
+
+.iteck-nav {
+	.pages_links {
+		height: calc(100vh - 280px);
+		overflow: auto;
+
+		&::-webkit-scrollbar {
+			height: 5px;
+			width: 3px;
+			background: #8169f122;
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: #8169f1;
+			-webkit-border-radius: 0;
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-corner {
+			background: #8169f122;
+			border-radius: 10px;
+		}
+
+		li {
+			opacity: 0;
+			// transform: translateY(-50px);
+			clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+			display: block;
+
+			a {
+				color: #222;
+				font-size: calc(14px + 1.5vw);
+				font-weight: bold;
+				margin: 10px 0;
+				position: relative;
+				transition: all 0.3s linear;
+				text-transform: capitalize;
+				padding: 0px;
+				display: inline-block;
+
+				&::after {
+					position: absolute;
+					content: "";
+					left: 110%;
+					top: 60%;
+					width: 0;
+					height: 2px;
+					background-color: #8169f1;
+					transition: all 0.3s ease-in-out;
+				}
+
+				&:hover,
+				&.current-menu-item {
+					color: #8169f1;
+
+					&::after {
+						width: 50px;
+					}
+				}
+			}
+
+			&.current-menu-item {
+				a {
+					color: #8169f1;
+
+					&::after {
+						width: 50px;
+					}
+				}
+			}
+		}
+
+		ul {
+			li {
+				transition: all 1s ease;
+
+				&:nth-of-type(1) {
+					transition-delay: 0.3s;
+				}
+
+				&:nth-of-type(2) {
+					transition-delay: 0.4s;
+				}
+
+				&:nth-of-type(3) {
+					transition-delay: 0.5s;
+				}
+
+				&:nth-of-type(4) {
+					transition-delay: 0.6s;
+				}
+
+				&:nth-of-type(5) {
+					transition-delay: 0.7s;
+				}
+
+				&:nth-of-type(6) {
+					transition-delay: 0.8s;
+				}
+
+				&:nth-of-type(7) {
+					transition-delay: 0.9s;
+				}
+
+				&:nth-of-type(8) {
+					transition-delay: 1s;
+				}
+			}
+		}
+	}
+}
+
+.side-panel.open {
+	.iteck-nav .pages_links li {
+		opacity: 1;
+		-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+		clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	}
+}
+
+// Light Mode
+.iteck-menu.style-3 {
+
+	.hamenu .menu-links .main-menu>li .link,
+	.menu-icon .text,
+	.hamenu .menu-links .main-menu .sub-menu li .sub-link.back {
+		color: #0c0f16;
+	}
+
+	.hamenu .menu-links .main-menu .sub-menu li,
+	.hamenu .menu-links {
+		color: #11141B;
+	}
+
+}
+
+// Dark Mode 
+body.iteck-dark-mode .iteck-menu.style-3 {
+
+	.hamenu .menu-links .main-menu>li .link,
+	.menu-icon .text,
+	.hamenu .menu-links .main-menu .sub-menu li .sub-link.back {
+		color: #fff;
+	}
+
+	.hamenu .menu-links .main-menu .sub-menu li {
+		color: #eee;
+	}
+
+}
+
+// Auto Mode
+@media (prefers-color-scheme: dark) {
+
+	body.iteck-auto-mode .iteck-menu.style-3 {
+
+		.hamenu .menu-links .main-menu>li .link,
+		.menu-icon .text,
+		.hamenu .menu-links .main-menu .sub-menu li .sub-link.back {
+			color: #fff;
+		}
+
+		.hamenu .menu-links .main-menu .sub-menu li {
+			color: #eee;
+		}
+
+
+	}
+}

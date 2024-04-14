@@ -1,0 +1,85 @@
+/*------------------------------ Careers ----------------------------*/
+.iteck-careers {
+    .position-card{
+        padding: 30px;
+        border: 1px solid #9993;
+        border-radius: 5px;
+        background-color: #fff;
+        display: block;
+        position: relative;
+        h5{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        .time{
+            font-size: 16px;
+            color: #000;
+
+            i {
+                color:  var(--color-main);
+            }
+        }
+
+        .trend-mark{
+            position: absolute;
+            width: 36px;
+            height: 60px;
+            line-height: 50px;
+            top: 0;
+            right: 30px;
+            background-color: var(--color-main);
+            color: #fff;
+            text-align: center;
+            &::after{
+                position: absolute;
+                content: "";
+                right: 0;
+                bottom: 0;
+                width: 36px;
+                height: 36px;
+                border-top: 18px solid transparent;
+                border-right: 18px solid transparent;
+                border-left: 18px solid transparent;
+                border-bottom: 18px solid #fff;
+            }
+        }
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        width: 55px;
+        height: 55px;
+        top: 0;
+        border: 1px solid #9993;
+        top: -100px;
+        transition: all 0.3s ease;
+        background-image: none;
+        border-radius: 5px;
+        &:hover{
+            border: 1px solid var(--color-main);
+            background: var(--color-main);
+            &:after {
+                color: #fff;
+            }
+        }
+        &:after {
+            color: var(--color-main);
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+        right: 0;
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        right: 75px;
+        left: auto;
+    }
+}

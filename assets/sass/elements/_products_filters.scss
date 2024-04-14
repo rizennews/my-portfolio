@@ -1,0 +1,213 @@
+.iteck-products-filters {
+    .filter-card-item {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #9994;
+        margin-bottom: 20px;
+
+        &.tags-filter.filter-card-scroll {
+            max-height: 130px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+
+    .form-check {
+        padding-left: 24px;
+
+        .form-check-input {
+            float: left;
+            margin-left: -18px;
+        }
+    }
+
+    .form-check-input {
+        width: 12px;
+        height: 12px;
+        margin-top: 0.25em;
+        vertical-align: top;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: 1px solid rgba(0, 0, 0, .25);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+
+        &[type=checkbox] {
+            border-radius: 0.25em;
+        }
+    }
+
+    .category-checkBox {
+        font-size: 11px;
+        color: #666;
+        text-transform: capitalize;
+        line-height: 2;
+    }
+
+    .form-check-input {
+        &[type=checkbox] {
+            border-radius: 0.25em;
+            padding: 0;
+        }
+
+        &:checked[type=checkbox] {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+        }
+    }
+
+    .form-check-input:checked {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+
+    .sub-tilte {
+        font-size: 11px;
+        color: #000;
+        font-weight: 800;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 15px;
+        color: #000;
+        font-weight: 800;
+        margin-bottom: 15px;
+
+        span {
+            display: inline-block;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        a {
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #212529;
+        }
+    }
+
+    .slider-range-content {
+        .amount-input {
+            display: flex;
+            justify-content: space-between;
+
+            .amount {
+                width: 35%;
+                margin-inline-end: 5%;
+                border-radius: 7px;
+                background-color: #fff;
+                font-size: 12px;
+                overflow: hidden;
+                padding: 6px 10px;
+
+                small {
+                    font-size: 10px;
+                    color: #999999;
+                    display: block;
+                    line-height: 2;
+                }
+
+                input {
+                    border: 0;
+                    width: 100%;
+                    line-height: 0;
+                    font-size: 12px;
+                    color: #000;
+                    background: #fff;
+                    padding: 1px 2px;
+                    display: block;
+                }
+            }
+
+            button {
+                width: 50px;
+                height: 50px;
+                background-color: var(--color-blue5);
+                border: 0;
+                color: #fff;
+                border-radius: 7px;
+                text-transform: capitalize;
+            }
+        }
+
+        .ui-slider-horizontal {
+            margin-top: 25px;
+            height: 6px;
+            border: 0;
+            background-color: #dfdfdf;
+            border-radius: 3px;
+            color: #333;
+            position: relative;
+            text-align: left;
+
+            .ui-slider-range {
+                background-color: var(--color-blue5);
+                top: 0;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                font-size: .7em;
+                display: block;
+                border: 0;
+                background-position: 0 0;
+            }
+
+            .ui-state-default,
+            .ui-widget-content .ui-state-default,
+            .ui-widget-header .ui-state-default,
+            .ui-button,
+            html .ui-button.ui-state-disabled:hover,
+            html .ui-button.ui-state-disabled:active {
+                border: 0;
+                background: var(--color-blue5);
+                border-radius: 50%;
+                width: 1em;
+                height: 1em;
+            }
+
+            .ui-slider-handle {
+                position: absolute;
+                z-index: 2;
+                cursor: pointer;
+                -ms-touch-action: none;
+                touch-action: none;
+                top: -0.3em;
+                margin-left: -0.6em;
+            }
+        }
+    }
+
+    .products-search {
+        .search-group{
+            position: relative;
+            margin-bottom: 25px;
+            input{
+                width: 100%;
+                background-color: #fff;
+                border: 0;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 11px;
+                min-height: 40px;
+                padding-inline-end: 20px;
+            }
+            button{
+                position: absolute;
+                right: 8px;
+                top: 10px;
+                font-size: 13px;
+                border: 0;
+                background: transparent;
+            }
+        }
+    }
+}

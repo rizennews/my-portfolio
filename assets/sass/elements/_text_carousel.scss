@@ -1,0 +1,48 @@
+.iteck-text-carousel {
+    position: relative;
+    color: #000;
+    padding: 20px 0;
+    .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        position: relative;
+    }
+    .swiper-slide{
+        a{
+            display: flex;
+            align-items: center;
+            h2{
+                font-size: 60px;
+                font-weight: 700;
+                color: transparent;
+                -webkit-text-stroke: 1px #000;
+                text-transform: uppercase;
+            }
+            img{
+                margin: 0 20px;
+                width: 30px;
+                height: 30px;
+            }
+            &:hover{
+                text-shadow: -5px -5px 0 #000;
+            }
+        }
+        
+    }
+    .icon{
+        position: absolute;
+        right: 25%;
+        height: 90px;
+        top: -70px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .iteck-text-carousel {
+        position: relative;
+        .swiper-slide{
+            width: max-content !important;
+        }
+    }
+}

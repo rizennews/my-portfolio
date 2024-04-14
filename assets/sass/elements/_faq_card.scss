@@ -1,0 +1,49 @@
+/* --------------- FAQ Card --------------- */
+.iteck-faq-card{
+    position: relative;
+    .faq-card{
+        position: relative;
+        padding: 30px;
+        background-color: #ffffff07;
+        border-radius: 10px;
+        display: flex;
+        border: 10px solid transparent;
+        border-top: 3px solid var(--color-main);
+
+        .icon{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            pointer-events: none;
+            object-fit: contain;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .numb{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            text-align: center;
+            background-color: #ffffff07;
+            margin-inline-end: 15px;
+            flex-shrink: 0;
+            color: #fff;
+        }
+
+        .info{
+            padding: 10px;
+            .title {
+                margin-bottom: 10px;
+                color: #fff
+            }
+            .text {
+                font-size: 16px;
+                color: #83779e;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+

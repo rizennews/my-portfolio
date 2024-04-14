@@ -1,0 +1,92 @@
+
+
+/* Multi Column Menu */
+.navigation li.mega-menu{
+	position: initial;
+}
+.navigation li.mega-menu li.menu-item-has-children > a:after{
+	display:none;
+}
+.header-wrapper .menu-wrapper ul li.mega-menu:hover ul {
+	opacity: 1;
+	visibility: visible;
+	transform: scaleY(1);
+}
+.header-wrapper .menu-wrapper ul li.mega-menu ul.sub-menu li {
+	background-color: inherit;
+	padding: 0 5px;
+	padding-bottom: 10px;
+	width: max-content;
+}
+
+.header-wrapper .menu-wrapper ul li.mega-menu ul.sub-menu li a::hover {
+	background-color: #fff;
+	color: #071041;
+}
+.header-wrapper .menu-wrapper ul li.mega-menu > ul.sub-menu {
+	background-color: #fff !important;
+	padding: 20px 0;
+	width: -webkit-calc(100vw - 60px)!important;
+	width: calc(100vw - 60px)!important;
+	display: flex;
+    >li{
+    	width: 25%;
+		display: block;
+		float: left;
+		margin: 0px;
+		border-left: 1px solid rgba(0, 0, 0, 0.1);
+		&:first-child{
+			border: none;
+		}
+    }
+} 
+
+.header-wrapper .menu-wrapper ul li.mega-menu.col2 > ul.sub-menu {
+    width: calc(100vw*.50 ) !important;
+    left: calc(100vw - 75%);
+    display: flex;
+    >li{
+    	width: 50%;
+    }
+}
+.header-wrapper .menu-wrapper ul li.mega-menu.col3 > ul.sub-menu {
+	width: 660px !important;
+	width: calc(100vw*.75 ) !important;
+    left: calc(100vw - 87.5%);
+    display: flex;
+    >li{
+    	width: 33.33%;
+    }
+}
+
+.header-wrapper .menu-wrapper ul li.mega-menu > ul.sub-menu > li ul {
+	position: relative;
+	width: inherit;
+	left: inherit;
+	border: none;
+	box-shadow: none;
+	display: block !important;
+	background: initial;
+}
+.header-wrapper .menu-wrapper ul li.mega-menu > ul.sub-menu > li > a {
+	font-weight: 600;
+	margin-bottom: 1px;
+	text-transform: uppercase;
+}
+
+.header-wrapper .menu-wrapper ul li.mega-menu > ul.sub-menu li:after {
+	content: '';
+}
+.header-wrapper .menu-wrapper ul li.mega-menu.hide-header > ul.sub-menu > li > a {
+	display: none;
+}
+/* Mobile Multi Column Menu */
+.mean-container .mega-menu.hide-header > ul > li {
+	border-top: none;
+}
+.mean-container .mega-menu.hide-header > ul > li > a {
+	display: none;
+}
+.mean-container .mega-menu.hide-header > ul > li > ul {
+	display: block !important;
+}

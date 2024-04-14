@@ -1,0 +1,66 @@
+/*--------------------------- Offcanvas --------------------------*/
+.iteck-offcanvas {
+
+    &.sidepanel {
+        span {
+            width: 25px;
+            height: 2px;
+            background-color: #000;
+            margin: 4px 0;
+            display: block;
+        }
+    }
+
+    .menu-icon {
+        &.icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            background-color: #000;
+        }
+        img {
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                -webkit-transform: rotate(140deg);
+                -ms-transform: rotate(140deg);
+                transform: rotate(140deg);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+}
+
+.side-panel {
+    background-color: #00000080;
+    transition-duration: 0s;
+    transition-delay: .35s;
+
+    .newzin-custom-sidepanel {
+        transform: translateX(calc(-100% + 80px));
+        transition: .45s;
+    }
+
+    &.open {
+        transition-duration: 0s;
+        transition-delay: 0s;
+        z-index: 99;
+
+        .newzin-custom-sidepanel {
+            transform: translateX(0);
+            transition: .45s;
+        }
+    }
+}

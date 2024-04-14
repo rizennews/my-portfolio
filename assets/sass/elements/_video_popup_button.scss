@@ -1,0 +1,44 @@
+/*-------------------------------------  Video Popup Button Style  -----------------------------------------*/  
+.iteck-play-button {
+    .vid_btn {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        i {
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: #fff;
+            margin-right: 15px;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            font-size: 18px;
+            padding-left: 2px;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            box-shadow: 0 0 0px 4px #157aa620;
+            border: 4px solid #cbe4f7;
+            &.scale-animation {
+                animation: scale_up_down 1s ease-in-out infinite alternate both;
+            }
+        }
+        span {
+            color: var(--color-main);
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}

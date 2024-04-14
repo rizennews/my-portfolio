@@ -1,0 +1,65 @@
+/*-------------------------------------  Blockquote Element Style  -----------------------------------------*/
+
+.iteck-blockquote{
+    border: initial;
+    background: initial;
+    box-shadow: initial;
+    border-top: 2px solid #000;
+    border-radius: 0;
+    font-style: normal;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+
+    &::before{
+        display: none;
+    }
+    .twitter-header{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .twitter-user{
+            display: flex;
+            align-items: center;
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                flex-shrink: 0;
+                margin-right: 14px;
+                overflow: hidden;
+                object-fit: cover;
+            }
+            .tweet-user-info{
+                cite{
+                    display: block;
+                    line-height: 1;
+                    font-style: normal;
+                    color: #000;
+                    font-weight: 500;
+                }
+                small{
+                    font-size: 12px;
+                    display: inline-block;
+                    color: #999;
+                }
+            }
+        }
+        .twitter-button{
+            a{
+                font-size: 25px;
+                color: #00ccff;
+            }
+        }
+    }
+    .twitter-content{
+        margin-top: 30px;
+        p{
+            color:#000;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+}

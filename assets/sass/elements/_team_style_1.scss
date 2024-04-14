@@ -1,0 +1,171 @@
+
+
+/*----------Team Style 1----------*/
+
+.team-post {
+	color: $color-white;
+}
+.team-name {
+	color: $color-white;
+	font-size: 40px;
+	margin: 0;
+	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	position: relative;
+	opacity: 0;
+	-webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	-moz-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	-ms-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	-o-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+	transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
+}
+.hovering {
+	&:hover {
+		.team-name {
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			opacity: 1;
+		}
+		.team-soc-list {
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}
+.team-soc-list {
+	list-style: none;
+	padding: 0;
+	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	position: relative;
+	margin: 0;
+	opacity: 0;
+	-webkit-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	-moz-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	-ms-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	-o-transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	transition: all 0.3s cubic-bezier(0.5, 0, 0.4, 1);
+	transition-delay: 0.6s;
+	li {
+		display: inline-block;
+	}
+	a {
+		display: block;
+		width: 35px;
+		height: 35px;
+		border-radius: 100px;
+		color: $color-white;
+		background: var(--color-main);
+		line-height: 35px;
+		&:hover {
+			background: #fff;
+			color: var(--color-main);
+		}
+	}
+}
+.team-sicon {
+	padding: 0;
+	display: block;
+	position: relative;
+	z-index: 33;
+	li {
+		display: inline-block;
+		text-align: center;
+		a {
+			background-color: $color-white;
+			color: var(--color-main);
+			padding-left: 0;
+			display: block;
+			border: 1px solid transparent;
+			border-radius: 50%;
+			margin: 5px;
+			&:hover {
+				border-color: $color-white;
+				color: var(--color-main);
+			}
+			i {
+				border-radius: 50%;
+				height: 35px;
+				line-height: 35px;
+				margin: auto;
+				text-align: center;
+				width: 35px;
+			}
+		}
+	}
+}
+.dsc_about_me {
+	.port-box {
+		min-height: 100%;
+	}
+}
+.team-1 {
+	box-shadow: 0px 15px 39px 0px rgb(106, 109, 113);
+	.team-info {
+		background: #fff;
+		padding: 20px 10px;
+		text-align: center;
+		border-bottom: 1px solid var(--color-main);
+	}
+	h5 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 14px;
+		margin-bottom: 0px;
+		color: var(--color-main);
+	}
+	.port-box {
+		padding: 50% 0;
+		text-align: center;
+	}
+	.port-dbox {
+		text-align: center;
+	}
+	.port-img {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	.port-inner {
+		&:hover {
+			.port-box {
+				opacity: 0.9;
+				background: #fff;
+			}
+			
+
+		}
+	}
+	&:hover{
+		.port-box{
+			background-color: #000000;
+    		opacity: 0.3;
+
+		}
+		.port-img {
+			webkit-filter: none;
+			-moz-filter: none;
+			filter: none;
+		}
+		.dbox-relative{
+			opacity: 1;
+			transform: scale(1);
+			-ms-transform: scale(1);
+			-webkit-transform: scale(1);
+		}
+
+	};
+}
+

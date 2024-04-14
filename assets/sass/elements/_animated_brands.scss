@@ -1,0 +1,35 @@
+.iteck-animated-brands {
+    .choose_us_brands {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -webkit-animation: slide_up_down 2s ease-in-out infinite alternate both;
+        animation: slide_up_down 2s ease-in-out infinite alternate both;
+        z-index: 0;
+    }
+    .choose_us_bubbles {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 45%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -webkit-animation: slide_up_down 2s ease-in-out infinite alternate both;
+        animation: slide_up_down 2s ease-in-out infinite alternate both;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        z-index: -1;
+    }
+    .choose_us_img {
+        position: absolute;
+        left: -65px;
+        bottom: -150px;
+        width: 60%;
+        -webkit-animation: rotate-center 100s linear infinite both;
+        animation: rotate-center 100s linear infinite both;
+        z-index: -1;
+    }
+}

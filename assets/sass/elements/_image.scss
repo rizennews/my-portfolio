@@ -1,0 +1,43 @@
+/*---- image Style ----*/ 
+.iteck-image {
+	position: relative;
+	.vid_icon {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		background-color: #fff;
+		color: #000;
+		font-size: 15px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+}
+.iteck-image-animation-rotate {
+	animation: rotate-center 100s linear infinite both;
+}
+
+.iteck-image-animation-wave {
+	animation: wave 2s ease-in-out infinite alternate both;
+}
+
+.iteck-image-animation-slide-up-down {
+	-webkit-animation: slide_up_down 2s ease-in-out infinite alternate both;
+    animation: slide_up_down 2s ease-in-out infinite alternate both;
+}
+
+.iteck-image-animation-slide-right-left {
+	-webkit-animation: RL_smooth 2s ease-in-out infinite alternate both;
+    animation: RL_smooth 2s ease-in-out infinite alternate both;
+}
+
+.iteck-image-animation-scale-up-down {
+	-webkit-animation: scale_up_down 1.5s ease-in-out infinite alternate both;
+    animation: scale_up_down 1.5s ease-in-out infinite alternate both;
+}

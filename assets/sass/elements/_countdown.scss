@@ -1,0 +1,49 @@
+
+/* ----------------------------------------------------------------
+			[ * Countdown Style ]
+-----------------------------------------------------------------*/
+
+.iteck-countdown-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	.iteck-countdown-item {
+		padding: 20px 0;
+		margin: 10px;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 5px;
+		border-bottom: 3px solid var(--color-main);
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		text-align: center;
+		.iteck-countdown-numbers {
+			font-size: calc(2vw + 20px);
+			line-height: 1.4;
+			font-weight: 700;
+			color: #000;
+		}
+		.iteck-countdown-label {
+			font-size: 13px;
+			text-transform: capitalize;
+			color: #999;
+		}
+	}
+	.iteck-countdown-item-container {
+		width: 100%;
+		margin: 10px;
+		text-align: center;
+		.iteck-countdown-item {
+			margin: 0;
+		}
+	}
+}
+

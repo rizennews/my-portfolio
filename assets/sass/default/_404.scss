@@ -1,0 +1,41 @@
+/*----404 style--*/
+.error-title {
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right,var(--color-main), var(--color-secondary), var(--color-ternary)) border-box;
+
+	border: 15px double var(--color-main);
+    border: 10px solid transparent !important;
+    border-radius: 5px;
+	color: #333;
+	display: inline-block;
+	font-family: $titleFont;
+	font-size: 200px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	padding: 10px 60px;
+	text-transform: uppercase;
+
+}
+.error-text {
+	color:#333;
+	font-family: $titleFont;
+
+	font-size: 20px;
+
+}
+
+.error-btn {
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-ternary)) border-box;
+    border: 1px solid var(--color-main);
+    border: 1px solid transparent !important;
+    border-radius: 5px;
+    color: var(--color-main);
+    display: inline-block;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 8px 20px;
+    position: relative;
+    -webkit-transition-duration: 1.0s;
+    transition-duration: 1.0s;
+    width: auto;
+    z-index: 1;
+}

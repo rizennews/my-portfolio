@@ -1,0 +1,100 @@
+/* --------------- projects style-6 --------------- */
+.projects.style-6{
+    padding: 0 30px;
+
+    .content{
+        background-color: #f1f2fa;
+        position: relative;
+        padding: 100px 0;
+        border-radius: 30px;
+    }
+}
+.iteck-related-port{
+
+	.slider-3items{
+		position: relative;
+		.project-card.style-6{
+			border-radius: 8px;
+			overflow: hidden;
+			display: block;
+			margin: 0 15px;
+			&:hover{
+				box-shadow: 0px 40px 35px 0px #51558622;
+				.info{
+					.title{
+						color: var(--color-main);
+					}
+				}
+			}
+			.img{
+				height: 240px;
+				overflow: hidden;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.info{
+				background-color: #fff;
+				padding: 35px;
+				transition: all 0.3s ease;
+				.title{
+					color: #000;
+					font-size: 18px;
+					font-weight: 700;
+					margin: 0;
+					line-height: 1.4;
+					display: block;
+				}
+				small a{
+					font-size: 12px;
+					color: var(--color-main);
+					text-transform: uppercase;
+					margin-bottom: 10px;
+				}
+				.text p{
+					font-size: 14px;
+					color: #666;
+					margin-bottom: 25px;
+				}
+				.tags {
+					span a {
+						color: #544b4b;
+						font-size: 12px;
+						padding: 5px 8px;
+						border-radius: 4px;
+						background-color: #f1f2fa;
+						margin-right: 5px;
+					}
+				}
+			}
+
+		}
+		.swiper-button-prev {
+			border-radius: 50%;
+			width: 45px;
+			height: 45px;
+			left: -60px;
+			background: #fff;
+			&::after{
+				color: var(--color-main);
+				font-size: 15px;
+				font-weight: bold;
+			}
+		}
+
+		.swiper-button-next, .slider-style-6 .swiper-button-prev {
+			border-radius: 50%;
+			width: 45px;
+			height: 45px;
+			right: -60px;
+			background: #fff;
+			&::after{
+				color: var(--color-main);
+				font-size: 15px;
+				font-weight: bold;
+			}
+		}
+	}
+}

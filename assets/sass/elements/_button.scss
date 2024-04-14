@@ -1,0 +1,87 @@
+/*-------------------------------------  Button Style  -----------------------------------------*/
+
+.iteck-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #212529;
+    color: #fff;
+    overflow: hidden;
+    
+
+    &.animated-gradient-bg::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 150%;
+        height: 100%;
+        z-index: 1;
+        background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0c3df4), color-stop(45%, #02b5ff), color-stop(#02b5ff), to(#0c3df4));
+        background: -webkit-linear-gradient(left, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
+        background: -o-linear-gradient(left, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
+        background: linear-gradient(to right, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    &.animated-gradient-bg:hover::before {
+        left: -50%;
+    }
+
+    .iteck-button-text {
+        position: relative;
+        z-index: 2;
+    }
+
+    .iteck-button-icon {
+        display: inline-block;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        .hover-animation-right-to-left {
+            animation: RL_smooth 1s ease-in-out infinite alternate both;
+        }
+    }
+
+    &.animated-icon {
+        .iteck-button-content-wrapper {
+            .iteck-button-icon {
+                position: relative;
+                transition: all 0.3s ease;
+
+                &:first-of-type {
+                    opacity: 0;
+                    transform: translateX(-10px);
+                }
+
+                &:last-of-type {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        &:hover {
+            .iteck-button-content-wrapper {
+                padding-left: 10px;
+
+                .iteck-button-icon {
+                    &:first-of-type {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                    &:last-of-type {
+                        opacity: 0;
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+    }
+}

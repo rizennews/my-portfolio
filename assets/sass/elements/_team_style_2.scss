@@ -1,0 +1,37 @@
+
+/*-----------Team Style 2----------*/
+
+.team-2 {
+	.port-box {
+		background: var(--color-main);
+	}
+}
+.team-list {
+	.port-dbox {
+		width: auto;
+	}
+}
+.team-list-two {
+	.team-col {
+		padding: 0;
+	}
+	.port-inner {
+		margin: 0;
+	}
+	.dbox-relative {
+		background: transparent;
+		padding: 0 20px;
+	}
+	.team-sicon {
+		li {
+			a {
+				color: var(--color-main);
+			}
+		}
+	}
+}
+.team-list-one {
+	.team-col {
+		margin-bottom: 30px;
+	}
+}

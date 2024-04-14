@@ -1,0 +1,238 @@
+/* --------------- prodocts tabs --------------- */
+.iteck-products-tabs {
+    .mix_tabs {
+        text-align: center;
+        margin-bottom: 20px;
+
+        .tab-link {
+            cursor: pointer;
+            background-color: #1d1c24;
+            padding: 12px 30px 12px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            text-transform: capitalize;
+
+            &.active {
+                background-color: var(--color-main);
+                color: #000;
+            }
+
+            .icon {
+                width: 20px;
+                margin-inline-end: 5px;
+            }
+        }
+    }
+
+    .project-card {
+        margin-top: 30px;
+        border: 1px solid #fff2;
+        border-radius: 5px;
+        display: block;
+        transition: all 0.4s ease;
+
+        &:hover {
+            border-color: var(--color-main);
+
+            .img {
+                .btn {
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                }
+            }
+        }
+
+        .top-inf {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            font-size: 12px;
+
+            i {
+                color: var(--color-main);
+                margin-inline-end: 2px;
+            }
+
+            .tinv-wishlist {
+                .tinvwl_add_to_wishlist_button {
+
+                    &.tinvwl-icon-heart-plus,
+                    &.tinvwl-icon-heart {
+                        height: 16px;
+                        width: 16px;
+                        color: #414040;
+                    }
+                }
+
+            }
+        }
+
+        .img {
+            height: 270px;
+            position: relative;
+            display: block;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            .btn {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, 0);
+                white-space: nowrap;
+                opacity: 0;
+                padding: 12px 30px;
+                font-weight: 500;
+                background-color: var(--color-main);
+                transition: all 0.3s ease;
+
+                .button__loader {
+                    display: none;
+                }
+
+                .button__added {
+                    display: none;
+                }
+
+                &.loading {
+                    opacity: 1;
+
+                    .button__cart {
+                        display: none;
+                    }
+
+                    .button__loader {
+                        display: inline-block;
+                        animation: none;
+
+                        .loading_popup {
+
+                            i {
+                                margin-left: 5px;
+                                animation: rotate-center 1.5s linear infinite both;
+                            }
+                        }
+                    }
+                }
+
+                &.added {
+
+                    .button__cart {
+                        animation: hide_add_cart 3s none;
+                    }
+
+                    .button__added {
+                        display: inline-block;
+                        animation: hide_added 0s ease-in 3s forwards;
+
+                        .added_popup {
+
+                            i {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .info {
+            padding: 20px 30px;
+
+            .bid {
+                font-size: 12px;
+                color: #7e7c88;
+
+                .bid-value {
+                    color: var(--color-main);
+                }
+            }
+
+            .title {
+                font-size: 16px;
+                margin-top: 5px;
+                font-weight: 500;
+                a {
+                    color: #fff;
+                }
+            }
+
+            .btm-inf {
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+
+                .btm-inf-item {
+                    color: #7e7c88;
+
+                    .icon {
+                        color: var(--color-main);
+                    }
+                }
+            }
+        }
+    }
+
+    .added_to_cart {
+        display: none;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .content {
+        padding: 0px;
+    }
+}
+
+@keyframes hide_add_cart {
+    0% {
+        opacity: 0;
+        position: absolute;
+        width: 0;
+    }
+
+    99% {
+        opacity: 0;
+        position: absolute;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        width: 0;
+    }
+}
+
+@keyframes hide_added {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@-webkit-keyframes hide_added {
+    to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .iteck-products-tabs .mix_tabs .tab-link {
+        width: 100%;
+        text-align: left;
+        display: block;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}

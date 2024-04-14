@@ -1,0 +1,26 @@
+
+
+/*----------Client Style----------*/
+.iteck-clients-carousel {
+	.img {
+		padding: 30px;
+		text-align: center;
+		border-radius: 20px;
+		border: 1px solid #9994;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 5px;
+		height: 150px;
+		&.img-card{
+			width: 19%;
+		}
+	}
+	
+
+	.swiper-wrapper {
+		-webkit-transition-timing-function: linear !important;
+		transition-timing-function: linear !important;
+		position: relative;
+	}
+}

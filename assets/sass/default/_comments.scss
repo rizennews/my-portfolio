@@ -1,0 +1,316 @@
+
+/* Text meant only for screen readers. */
+.commentlist {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 20px;
+	padding-top: 20px;
+	>li {
+		list-style: none;
+	}
+	.comment-respond {
+		.form-submit {
+			margin-bottom: 80px;
+		}
+		margin-top: 70px;
+	}
+	.children {
+		list-style: none;
+		position: relative;
+
+	}
+	.avatar {
+		border: 1px solid #ddd;
+		border-radius: 0;
+		border-radius: 50em;
+	}
+	li.comment {
+		display: block;
+		overflow: hidden;
+	}
+}
+.fn.comment-author {
+	color: $color_8;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 1;
+	.url {
+		line-height: 1.5;
+		color: $color-black;
+	}
+}
+
+.comment-inner.clearfix {
+	float: left;
+	width: 87%;
+}
+.comment-author.vcard {
+	float: left;
+	padding-right: 20px;
+	max-width: 13%;
+}
+.comment-meta {
+	a {
+		font-weight: normal;
+		font-size: 12px;
+		float: left;
+		margin-bottom: 10px;
+		font-family: $bodyFont;
+	}
+	.comment-edit-link {
+		border: 1px solid #DDDDDD;
+		display: inline-block;
+		float: right;
+		font-size: 12px;
+		font-weight: normal;
+		padding: 5px 10px;
+		line-height: 1;
+		float: right;
+	}
+}
+.comment-meta.commentmetadata {
+	display: block;
+	overflow: hidden;
+}
+.comment-body {
+    overflow: hidden;
+    padding: 30px;
+    background: #f7f7f7;
+    margin-bottom: 20px;
+}
+.dark-page {
+	.comment-body {
+		border-bottom-color: $gray-dark;
+	}
+}
+.comment-reply-link {
+	font-size: 14px;
+	color:#fff;
+	background-color: #1b1a1a;
+	border-radius: 35px;
+	padding: 0 14px;
+    line-height: 35px;
+    display: inline-block;
+    font-weight: 500;
+    &:hover{
+    	background-color: var(--color-main);
+    	color:#fff !important;
+    }
+}
+.full-size-img {
+	width: 100%;
+}
+.bypostauthor {
+	>.comment-body {
+		.fn.comment-author {
+			&:after {
+				content: "\f007";
+				background: #dadada none repeat scroll 0 0;
+				border-radius: 100px;
+				color: inherit;
+				display: inline-block;
+				font-family: $iconFont;
+				font-size: 11px;
+				height: 23px;
+				line-height: 23px;
+				margin-left: 3px;
+				text-align: center;
+				width: 23px;
+			}
+		}
+	}
+}
+#reply-title {
+	font-size: 22px;
+	margin: 30px 0 12px 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	small {
+		border-bottom: 1px solid #eee;
+		margin-left: 5px;
+	}
+}
+h2.comments-title {
+	font-size: 22px;
+	margin: 0;
+	margin-bottom: 12px;
+	position: relative;
+	text-transform: uppercase;
+	&:after{
+		content: "";
+	    position: absolute;
+	    height: 2px;
+	    width: 80px;
+	    left: 0;
+	    bottom: -6px;
+	    background-color: var(--color-main);
+	    background: linear-gradient(to right, var(--color-primary) , var(--color-secondary) , var(--color-ternary));
+	}
+}
+.pagination-comment {
+	text-align: right;
+	text-transform: uppercase;
+	.page-numbers.current {
+		background: #ccc;
+		color: $color-white;
+		border-color: $color_10;
+	}
+	.page-numbers {
+		display: inline-block;
+		padding: 7px 12px;
+		line-height: 1;
+		border: 1px solid;
+		font-size: 13px;
+	}
+}
+.comment-form {
+	label {
+		display: block;
+		font-family: $bodyFont;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+}
+
+.comment-form-cookies-consent input[type=checkbox] {
+    width: initial;
+	height: 11px;
+    margin-right: 5px;
+}
+.comment-form-cookies-consent label {
+    display: inline-block;
+}
+
+.single-post {
+	.form-submit {
+		margin-bottom: 60px;
+	}
+}
+.form-submit {
+	#submit {
+		-moz-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+		background-color: var(--color-main);
+		border-color: var(--color-main);
+		color: #666;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 600;
+		margin-top: 10px;
+		padding: 6px 20px;
+		text-align: center;
+		width: auto;
+		background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-primary) , var(--color-secondary) , var(--color-ternary)) border-box;
+    	border-radius: 5px;
+    	border: 1px solid transparent !important;
+		&:hover {
+			filter: brightness(120%);
+		}
+	}
+}
+.comment-top {
+	>span {
+		display: block;
+		font-size: 13px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+.title-strong {
+	font-size: 20px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.pagination {
+	>li {
+		>a {
+			color: inherit;
+		}
+		>span {
+			color: inherit;
+		}
+	}
+}
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: relative;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	display: block;
+	clear: both;
+	position: relative !important;
+	&:focus {
+		background-color: $color-white;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: var(--color-main);
+		display: block;
+		font-size: 14px;
+		font-size: 0.875rem;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000;
+	}
+}
+.pagination > li > a, .pagination > li > span{color:inherit;}
+
+
+
+
+
+	.dsc-btn-style3{
+	color: #fff !important;
+	background-color: var(--color-main);
+	border:1px solid #fff;
+	border-radius: 50px;
+	background: var(--color-main);
+	cursor: pointer;
+	}
+	.dsc-btn-style3:hover  .elementor-button{
+	color: var(--color-main);
+	}
+
+.dsc-btn-style3:hover{
+border-color: var(--color-main);
+	}
+
+.dsc-btn-style-4{
+    -webkit-transition-duration: 1.5s;
+    display: inline-block;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: var(--color-main);
+    padding: 10px 30px;
+    transition-duration: 1.5s;
+    letter-spacing: 1px;
+    line-height: 20px;
+    border: 1px solid var(--color-main);
+    border-radius: 50px;
+    background: transparent;
+    cursor: pointer;
+}
+.dsc-btn-style-4:hover{
+    color: #fff;
+    border: 1px solid var(--color-main);
+    background: var(--color-main);
+}
+.comment-inner > *:last-child{
+	margin-bottom: 0 !important;
+}
+.comment-inner .reply{
+	margin-top: 30px;
+}

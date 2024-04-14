@@ -1,0 +1,50 @@
+.iteck-shape {
+    &::after {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: #ecf0f3;
+        position: absolute;
+        content: "";
+    }
+}
+
+.iteck-shape-animation-rotate {
+    .iteck-shape::after {
+	    animation: rotate-center 100s linear infinite both;
+    }
+}
+
+.iteck-shape-animation-wave {
+    .iteck-shape::after {
+	    animation: wave 2s ease-in-out infinite alternate both;
+    }
+}
+
+.iteck-shape-animation-slide-up-down {
+    .iteck-shape::after {
+        -webkit-animation: slide_up_down 2s ease-in-out infinite alternate both;
+        animation: slide_up_down 2s ease-in-out infinite alternate both;
+    }
+}
+
+.iteck-shape-animation-slide-right-left {
+    .iteck-shape::after {
+        -webkit-animation: RL_smooth 2s ease-in-out infinite alternate both;
+        animation: RL_smooth 2s ease-in-out infinite alternate both;
+    }
+}
+
+.iteck-shape-animation-move-right-left {
+    .iteck-shape::after {
+        -webkit-animation: right_left 5s -1s alternate infinite linear;
+        animation: right_left 5s -1s alternate infinite linear;
+    }
+}
+
+.iteck-shape-animation-scale-up-down {
+    .iteck-shape::after {
+        -webkit-animation: scale_up_down 1.5s ease-in-out infinite alternate both;
+        animation: scale_up_down 1.5s ease-in-out infinite alternate both;
+    }
+}
