@@ -3,8 +3,7 @@ Certainly! Here's the revised README.md with the portfolio URL included:
 ```markdown
 # Designolabs Studio Portfolio Website 🎨
 
-Welcome to Designolabs Studio Portfolio Website! This repository contains the code for my personal portfolio website, which is built with WordPress, PHP, and CSS.
-
+Welcome to Designolabs Studio Portfolio Website! This repository contains the code for my personal portfolio website, which is built with WordPress, PHP,HTML,CSS, SCSS and Javascript.
 ## Portfolio URL
 
 [Designolabs Studio Portfolio](https://github.com/rizennews/my-portfolio)
